@@ -3,7 +3,7 @@ Repositório do projeto feito para apresentação  no dia 23 de novembro de 2020
 tema do programa:  Cálculo de  gasto de consumo elétrico
 Tela de login feita com o framework Guna
 Corpo da aplicação criado .NETCore Windows Forms
-Guna  framework ui2 e ui usados para o frontand "versão trial de 15 dias"
+Guna  framework ui2 e ui usados para o frontend "versão trial de 15 dias"
 My SQL para o banco de dados de login e futuramente para cadastro das informações no programa
 
 

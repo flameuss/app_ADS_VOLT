@@ -1,9 +1,9 @@
 # appf1
 Repositório do projeto feito para apresentação  no dia 23 de novembro de 2020 
 tema do programa:  Cálculo de  gasto de consumo elétrico
-tela de login feita em windows forms
-corpo  da aplicação feito em windows forms
-guna  framework ui2 e ui usados para o frontand "versão trial de 15 dias"
+Tela de login feita com o framework Guna
+Corpo da aplicação criado .NETCore Windows Forms
+Guna  framework ui2 e ui usados para o frontand "versão trial de 15 dias"
 My SQL para o banco de dados de login e futuramente para cadastro das informações no programa
 
 
@@ -14,7 +14,7 @@ Braz Gonçalvez do Nascimento;
 Filipe Fonseca da Silva;
 Ighor Augusto Ribeiro Mello;
 Luis Henrique Da Silva Campos;
-Maria Fernanda da Silva Barbosa; 
+Maria Fernanda da Silva Barbosa;
 Tiago Cestari De Carvalho;
 
 Projeto com fins acadêmicos feito para avaliação na FATEC Profesor Waldomiro May - Cruzeiro - SP

@@ -46,6 +46,22 @@ namespace appf1
             this.estatisticasButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.calcularButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.pnBody = new Guna.UI.WinForms.GunaPanel();
+            this.pn_Estatisticas = new System.Windows.Forms.Panel();
+            this.grafico_panel = new Guna.UI.WinForms.GunaPanel();
+            this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
+            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.gunaGradient2Panel3 = new Guna.UI.WinForms.GunaGradient2Panel();
+            this.gunaGradient2Panel2 = new Guna.UI.WinForms.GunaGradient2Panel();
+            this.gunaGradient2Panel1 = new Guna.UI.WinForms.GunaGradient2Panel();
+            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.gunaAdvenceButton3 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.Pn_Usuario = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pn_Calcular2 = new Guna.UI.WinForms.GunaPanel();
             this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator7 = new Guna.UI2.WinForms.Guna2Separator();
@@ -84,36 +100,20 @@ namespace appf1
             this.guna2HtmlLabel28 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2RadioButton7 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2HtmlLabel27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pn_Estatisticas = new System.Windows.Forms.Panel();
-            this.grafico_panel = new Guna.UI.WinForms.GunaPanel();
-            this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaGradient2Panel3 = new Guna.UI.WinForms.GunaGradient2Panel();
-            this.gunaGradient2Panel2 = new Guna.UI.WinForms.GunaGradient2Panel();
-            this.gunaGradient2Panel1 = new Guna.UI.WinForms.GunaGradient2Panel();
-            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.gunaAdvenceButton3 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.Pn_Usuario = new System.Windows.Forms.Panel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.radiop2g = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.radiop3g = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.painelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.menuPainel.SuspendLayout();
             this.pnBody.SuspendLayout();
-            this.pn_Calcular2.SuspendLayout();
-            this.p2g.SuspendLayout();
-            this.p3g.SuspendLayout();
-            this.p1g.SuspendLayout();
             this.pn_Estatisticas.SuspendLayout();
             this.grafico_panel.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             this.Pn_Usuario.SuspendLayout();
+            this.pn_Calcular2.SuspendLayout();
+            this.p2g.SuspendLayout();
+            this.p3g.SuspendLayout();
+            this.p1g.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2DragControl1
@@ -136,6 +136,7 @@ namespace appf1
             this.painelPrincipal.ShadowDecoration.Parent = this.painelPrincipal;
             this.painelPrincipal.Size = new System.Drawing.Size(900, 50);
             this.painelPrincipal.TabIndex = 4;
+            this.painelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.painelPrincipal_Paint);
             // 
             // guna2PictureBox1
             // 
@@ -363,15 +364,287 @@ namespace appf1
             // pnBody
             // 
             this.pnBody.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(38)))), ((int)(((byte)(42)))));
+            this.pnBody.Controls.Add(this.pn_Calcular2);
             this.pnBody.Controls.Add(this.pn_Estatisticas);
             this.pnBody.Controls.Add(this.Pn_Usuario);
-            this.pnBody.Controls.Add(this.pn_Calcular2);
             this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnBody.Location = new System.Drawing.Point(0, 95);
             this.pnBody.Name = "pnBody";
             this.pnBody.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
             this.pnBody.Size = new System.Drawing.Size(900, 505);
             this.pnBody.TabIndex = 50;
+            // 
+            // pn_Estatisticas
+            // 
+            this.pn_Estatisticas.Controls.Add(this.grafico_panel);
+            this.pn_Estatisticas.Controls.Add(this.gunaPanel1);
+            this.pn_Estatisticas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pn_Estatisticas.Location = new System.Drawing.Point(0, 6);
+            this.pn_Estatisticas.Name = "pn_Estatisticas";
+            this.pn_Estatisticas.Size = new System.Drawing.Size(900, 499);
+            this.pn_Estatisticas.TabIndex = 2;
+            // 
+            // grafico_panel
+            // 
+            this.grafico_panel.Controls.Add(this.gunaGroupBox2);
+            this.grafico_panel.Controls.Add(this.gunaGroupBox1);
+            this.grafico_panel.Controls.Add(this.gunaGradient2Panel3);
+            this.grafico_panel.Controls.Add(this.gunaGradient2Panel2);
+            this.grafico_panel.Controls.Add(this.gunaGradient2Panel1);
+            this.grafico_panel.Controls.Add(this.guna2HtmlLabel18);
+            this.grafico_panel.Controls.Add(this.guna2HtmlLabel19);
+            this.grafico_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grafico_panel.Location = new System.Drawing.Point(169, 0);
+            this.grafico_panel.Name = "grafico_panel";
+            this.grafico_panel.Size = new System.Drawing.Size(731, 499);
+            this.grafico_panel.TabIndex = 1;
+            // 
+            // gunaGroupBox2
+            // 
+            this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(38)))), ((int)(((byte)(42)))));
+            this.gunaGroupBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(57)))));
+            this.gunaGroupBox2.BorderSize = 1;
+            this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox2.LineTop = 0;
+            this.gunaGroupBox2.Location = new System.Drawing.Point(544, 64);
+            this.gunaGroupBox2.Name = "gunaGroupBox2";
+            this.gunaGroupBox2.Radius = 3;
+            this.gunaGroupBox2.Size = new System.Drawing.Size(175, 409);
+            this.gunaGroupBox2.TabIndex = 62;
+            this.gunaGroupBox2.Text = "gunaGroupBox2";
+            this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // gunaGroupBox1
+            // 
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(38)))), ((int)(((byte)(42)))));
+            this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(57)))));
+            this.gunaGroupBox1.BorderSize = 1;
+            this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox1.LineTop = 0;
+            this.gunaGroupBox1.Location = new System.Drawing.Point(15, 145);
+            this.gunaGroupBox1.Name = "gunaGroupBox1";
+            this.gunaGroupBox1.Radius = 3;
+            this.gunaGroupBox1.Size = new System.Drawing.Size(523, 328);
+            this.gunaGroupBox1.TabIndex = 61;
+            this.gunaGroupBox1.Text = "gunaGroupBox1";
+            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // gunaGradient2Panel3
+            // 
+            this.gunaGradient2Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGradient2Panel3.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(160)))), ((int)(((byte)(206)))));
+            this.gunaGradient2Panel3.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
+            this.gunaGradient2Panel3.Location = new System.Drawing.Point(368, 64);
+            this.gunaGradient2Panel3.Name = "gunaGradient2Panel3";
+            this.gunaGradient2Panel3.Radius = 4;
+            this.gunaGradient2Panel3.Size = new System.Drawing.Size(170, 70);
+            this.gunaGradient2Panel3.TabIndex = 60;
+            // 
+            // gunaGradient2Panel2
+            // 
+            this.gunaGradient2Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGradient2Panel2.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(109)))));
+            this.gunaGradient2Panel2.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(121)))), ((int)(((byte)(147)))));
+            this.gunaGradient2Panel2.Location = new System.Drawing.Point(192, 64);
+            this.gunaGradient2Panel2.Name = "gunaGradient2Panel2";
+            this.gunaGradient2Panel2.Radius = 4;
+            this.gunaGradient2Panel2.Size = new System.Drawing.Size(170, 70);
+            this.gunaGradient2Panel2.TabIndex = 60;
+            // 
+            // gunaGradient2Panel1
+            // 
+            this.gunaGradient2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGradient2Panel1.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(132)))), ((int)(((byte)(249)))));
+            this.gunaGradient2Panel1.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(168)))), ((int)(((byte)(255)))));
+            this.gunaGradient2Panel1.Location = new System.Drawing.Point(15, 64);
+            this.gunaGradient2Panel1.Name = "gunaGradient2Panel1";
+            this.gunaGradient2Panel1.Radius = 4;
+            this.gunaGradient2Panel1.Size = new System.Drawing.Size(170, 70);
+            this.gunaGradient2Panel1.TabIndex = 59;
+            // 
+            // guna2HtmlLabel18
+            // 
+            this.guna2HtmlLabel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Segoe UI Black", 15F);
+            this.guna2HtmlLabel18.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel18.Location = new System.Drawing.Point(15, 3);
+            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
+            this.guna2HtmlLabel18.Size = new System.Drawing.Size(179, 30);
+            this.guna2HtmlLabel18.TabIndex = 57;
+            this.guna2HtmlLabel18.Text = "Gráfico de Gastos";
+            this.guna2HtmlLabel18.Click += new System.EventHandler(this.guna2HtmlLabel18_Click);
+            // 
+            // guna2HtmlLabel19
+            // 
+            this.guna2HtmlLabel19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel19.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2HtmlLabel19.ForeColor = System.Drawing.Color.DarkGray;
+            this.guna2HtmlLabel19.Location = new System.Drawing.Point(15, 34);
+            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
+            this.guna2HtmlLabel19.Size = new System.Drawing.Size(167, 23);
+            this.guna2HtmlLabel19.TabIndex = 58;
+            this.guna2HtmlLabel19.Text = "Estatisticas de consumo";
+            this.guna2HtmlLabel19.Click += new System.EventHandler(this.guna2HtmlLabel19_Click);
+            // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.gunaPanel1.Controls.Add(this.guna2HtmlLabel1);
+            this.gunaPanel1.Controls.Add(this.gunaAdvenceButton3);
+            this.gunaPanel1.Controls.Add(this.gunaAdvenceButton2);
+            this.gunaPanel1.Controls.Add(this.gunaAdvenceButton1);
+            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
+            this.gunaPanel1.Size = new System.Drawing.Size(169, 499);
+            this.gunaPanel1.TabIndex = 0;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Black", 10F);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(21, 369);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(127, 19);
+            this.guna2HtmlLabel1.TabIndex = 56;
+            this.guna2HtmlLabel1.Text = "NOME PROGRAMA";
+            // 
+            // gunaAdvenceButton3
+            // 
+            this.gunaAdvenceButton3.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton3.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.gunaAdvenceButton3.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton3.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.gunaAdvenceButton3.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.gunaAdvenceButton3.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton3.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton3.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton3.CheckedImage")));
+            this.gunaAdvenceButton3.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.gunaAdvenceButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaAdvenceButton3.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaAdvenceButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
+            this.gunaAdvenceButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton3.Image")));
+            this.gunaAdvenceButton3.ImageOffsetX = 15;
+            this.gunaAdvenceButton3.ImageSize = new System.Drawing.Size(18, 18);
+            this.gunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.gunaAdvenceButton3.LineLeft = 3;
+            this.gunaAdvenceButton3.Location = new System.Drawing.Point(0, 114);
+            this.gunaAdvenceButton3.Name = "gunaAdvenceButton3";
+            this.gunaAdvenceButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(82)))), ((int)(((byte)(86)))));
+            this.gunaAdvenceButton3.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton3.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
+            this.gunaAdvenceButton3.OnHoverImage = null;
+            this.gunaAdvenceButton3.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.gunaAdvenceButton3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton3.Size = new System.Drawing.Size(169, 42);
+            this.gunaAdvenceButton3.TabIndex = 3;
+            this.gunaAdvenceButton3.Text = "Gráfico Gastos";
+            this.gunaAdvenceButton3.TextOffsetX = 12;
+            // 
+            // gunaAdvenceButton2
+            // 
+            this.gunaAdvenceButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton2.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.gunaAdvenceButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton2.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.gunaAdvenceButton2.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.gunaAdvenceButton2.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton2.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton2.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton2.CheckedImage")));
+            this.gunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.gunaAdvenceButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaAdvenceButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
+            this.gunaAdvenceButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton2.Image")));
+            this.gunaAdvenceButton2.ImageOffsetX = 15;
+            this.gunaAdvenceButton2.ImageSize = new System.Drawing.Size(18, 18);
+            this.gunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.gunaAdvenceButton2.LineLeft = 3;
+            this.gunaAdvenceButton2.Location = new System.Drawing.Point(0, 72);
+            this.gunaAdvenceButton2.Name = "gunaAdvenceButton2";
+            this.gunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(82)))), ((int)(((byte)(86)))));
+            this.gunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
+            this.gunaAdvenceButton2.OnHoverImage = null;
+            this.gunaAdvenceButton2.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.gunaAdvenceButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton2.Size = new System.Drawing.Size(169, 42);
+            this.gunaAdvenceButton2.TabIndex = 2;
+            this.gunaAdvenceButton2.Text = "Gráfico Gastos";
+            this.gunaAdvenceButton2.TextOffsetX = 12;
+            this.gunaAdvenceButton2.Click += new System.EventHandler(this.gunaAdvenceButton2_Click);
+            // 
+            // gunaAdvenceButton1
+            // 
+            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.gunaAdvenceButton1.Checked = true;
+            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.CheckedImage")));
+            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
+            this.gunaAdvenceButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.Image")));
+            this.gunaAdvenceButton1.ImageOffsetX = 15;
+            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(18, 18);
+            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.gunaAdvenceButton1.LineLeft = 3;
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(0, 30);
+            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
+            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(82)))), ((int)(((byte)(86)))));
+            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
+            this.gunaAdvenceButton1.OnHoverImage = null;
+            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.Size = new System.Drawing.Size(169, 42);
+            this.gunaAdvenceButton1.TabIndex = 1;
+            this.gunaAdvenceButton1.Text = "Gráfico Gastos";
+            this.gunaAdvenceButton1.TextOffsetX = 12;
+            this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
+            // 
+            // Pn_Usuario
+            // 
+            this.Pn_Usuario.Controls.Add(this.guna2HtmlLabel3);
+            this.Pn_Usuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pn_Usuario.Location = new System.Drawing.Point(0, 6);
+            this.Pn_Usuario.Name = "Pn_Usuario";
+            this.Pn_Usuario.Size = new System.Drawing.Size(900, 499);
+            this.Pn_Usuario.TabIndex = 1;
+            this.Pn_Usuario.PaddingChanged += new System.EventHandler(this.Pn_Usuario_PaddingChanged);
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Black", 25F);
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(24, 12);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(114, 47);
+            this.guna2HtmlLabel3.TabIndex = 58;
+            this.guna2HtmlLabel3.Text = "TELA 3";
             // 
             // pn_Calcular2
             // 
@@ -1022,278 +1295,6 @@ namespace appf1
             this.guna2HtmlLabel27.TabIndex = 104;
             this.guna2HtmlLabel27.Text = "MÊS";
             // 
-            // pn_Estatisticas
-            // 
-            this.pn_Estatisticas.Controls.Add(this.grafico_panel);
-            this.pn_Estatisticas.Controls.Add(this.gunaPanel1);
-            this.pn_Estatisticas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_Estatisticas.Location = new System.Drawing.Point(0, 6);
-            this.pn_Estatisticas.Name = "pn_Estatisticas";
-            this.pn_Estatisticas.Size = new System.Drawing.Size(900, 499);
-            this.pn_Estatisticas.TabIndex = 2;
-            // 
-            // grafico_panel
-            // 
-            this.grafico_panel.Controls.Add(this.gunaGroupBox2);
-            this.grafico_panel.Controls.Add(this.gunaGroupBox1);
-            this.grafico_panel.Controls.Add(this.gunaGradient2Panel3);
-            this.grafico_panel.Controls.Add(this.gunaGradient2Panel2);
-            this.grafico_panel.Controls.Add(this.gunaGradient2Panel1);
-            this.grafico_panel.Controls.Add(this.guna2HtmlLabel18);
-            this.grafico_panel.Controls.Add(this.guna2HtmlLabel19);
-            this.grafico_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grafico_panel.Location = new System.Drawing.Point(169, 0);
-            this.grafico_panel.Name = "grafico_panel";
-            this.grafico_panel.Size = new System.Drawing.Size(731, 499);
-            this.grafico_panel.TabIndex = 1;
-            // 
-            // gunaGroupBox2
-            // 
-            this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(38)))), ((int)(((byte)(42)))));
-            this.gunaGroupBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(57)))));
-            this.gunaGroupBox2.BorderSize = 1;
-            this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox2.LineTop = 0;
-            this.gunaGroupBox2.Location = new System.Drawing.Point(544, 64);
-            this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Radius = 3;
-            this.gunaGroupBox2.Size = new System.Drawing.Size(175, 409);
-            this.gunaGroupBox2.TabIndex = 62;
-            this.gunaGroupBox2.Text = "gunaGroupBox2";
-            this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // gunaGroupBox1
-            // 
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(38)))), ((int)(((byte)(42)))));
-            this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(57)))));
-            this.gunaGroupBox1.BorderSize = 1;
-            this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox1.LineTop = 0;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(15, 145);
-            this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Radius = 3;
-            this.gunaGroupBox1.Size = new System.Drawing.Size(523, 328);
-            this.gunaGroupBox1.TabIndex = 61;
-            this.gunaGroupBox1.Text = "gunaGroupBox1";
-            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // gunaGradient2Panel3
-            // 
-            this.gunaGradient2Panel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGradient2Panel3.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(160)))), ((int)(((byte)(206)))));
-            this.gunaGradient2Panel3.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            this.gunaGradient2Panel3.Location = new System.Drawing.Point(368, 64);
-            this.gunaGradient2Panel3.Name = "gunaGradient2Panel3";
-            this.gunaGradient2Panel3.Radius = 4;
-            this.gunaGradient2Panel3.Size = new System.Drawing.Size(170, 70);
-            this.gunaGradient2Panel3.TabIndex = 60;
-            // 
-            // gunaGradient2Panel2
-            // 
-            this.gunaGradient2Panel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGradient2Panel2.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(109)))));
-            this.gunaGradient2Panel2.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(121)))), ((int)(((byte)(147)))));
-            this.gunaGradient2Panel2.Location = new System.Drawing.Point(192, 64);
-            this.gunaGradient2Panel2.Name = "gunaGradient2Panel2";
-            this.gunaGradient2Panel2.Radius = 4;
-            this.gunaGradient2Panel2.Size = new System.Drawing.Size(170, 70);
-            this.gunaGradient2Panel2.TabIndex = 60;
-            // 
-            // gunaGradient2Panel1
-            // 
-            this.gunaGradient2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGradient2Panel1.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(132)))), ((int)(((byte)(249)))));
-            this.gunaGradient2Panel1.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(168)))), ((int)(((byte)(255)))));
-            this.gunaGradient2Panel1.Location = new System.Drawing.Point(15, 64);
-            this.gunaGradient2Panel1.Name = "gunaGradient2Panel1";
-            this.gunaGradient2Panel1.Radius = 4;
-            this.gunaGradient2Panel1.Size = new System.Drawing.Size(170, 70);
-            this.gunaGradient2Panel1.TabIndex = 59;
-            // 
-            // guna2HtmlLabel18
-            // 
-            this.guna2HtmlLabel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Segoe UI Black", 15F);
-            this.guna2HtmlLabel18.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(15, 3);
-            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
-            this.guna2HtmlLabel18.Size = new System.Drawing.Size(179, 30);
-            this.guna2HtmlLabel18.TabIndex = 57;
-            this.guna2HtmlLabel18.Text = "Gráfico de Gastos";
-            this.guna2HtmlLabel18.Click += new System.EventHandler(this.guna2HtmlLabel18_Click);
-            // 
-            // guna2HtmlLabel19
-            // 
-            this.guna2HtmlLabel19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel19.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2HtmlLabel19.ForeColor = System.Drawing.Color.DarkGray;
-            this.guna2HtmlLabel19.Location = new System.Drawing.Point(15, 34);
-            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
-            this.guna2HtmlLabel19.Size = new System.Drawing.Size(167, 23);
-            this.guna2HtmlLabel19.TabIndex = 58;
-            this.guna2HtmlLabel19.Text = "Estatisticas de consumo";
-            this.guna2HtmlLabel19.Click += new System.EventHandler(this.guna2HtmlLabel19_Click);
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.gunaPanel1.Controls.Add(this.guna2HtmlLabel1);
-            this.gunaPanel1.Controls.Add(this.gunaAdvenceButton3);
-            this.gunaPanel1.Controls.Add(this.gunaAdvenceButton2);
-            this.gunaPanel1.Controls.Add(this.gunaAdvenceButton1);
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
-            this.gunaPanel1.Size = new System.Drawing.Size(169, 499);
-            this.gunaPanel1.TabIndex = 0;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Black", 10F);
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(21, 369);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(127, 19);
-            this.guna2HtmlLabel1.TabIndex = 56;
-            this.guna2HtmlLabel1.Text = "NOME PROGRAMA";
-            // 
-            // gunaAdvenceButton3
-            // 
-            this.gunaAdvenceButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton3.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.gunaAdvenceButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.gunaAdvenceButton3.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.gunaAdvenceButton3.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton3.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton3.CheckedImage")));
-            this.gunaAdvenceButton3.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaAdvenceButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaAdvenceButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.gunaAdvenceButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
-            this.gunaAdvenceButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton3.Image")));
-            this.gunaAdvenceButton3.ImageOffsetX = 15;
-            this.gunaAdvenceButton3.ImageSize = new System.Drawing.Size(18, 18);
-            this.gunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.gunaAdvenceButton3.LineLeft = 3;
-            this.gunaAdvenceButton3.Location = new System.Drawing.Point(0, 114);
-            this.gunaAdvenceButton3.Name = "gunaAdvenceButton3";
-            this.gunaAdvenceButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(82)))), ((int)(((byte)(86)))));
-            this.gunaAdvenceButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
-            this.gunaAdvenceButton3.OnHoverImage = null;
-            this.gunaAdvenceButton3.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaAdvenceButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.Size = new System.Drawing.Size(169, 42);
-            this.gunaAdvenceButton3.TabIndex = 3;
-            this.gunaAdvenceButton3.Text = "Gráfico Gastos";
-            this.gunaAdvenceButton3.TextOffsetX = 12;
-            // 
-            // gunaAdvenceButton2
-            // 
-            this.gunaAdvenceButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton2.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.gunaAdvenceButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.gunaAdvenceButton2.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.gunaAdvenceButton2.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton2.CheckedImage")));
-            this.gunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaAdvenceButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.gunaAdvenceButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
-            this.gunaAdvenceButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton2.Image")));
-            this.gunaAdvenceButton2.ImageOffsetX = 15;
-            this.gunaAdvenceButton2.ImageSize = new System.Drawing.Size(18, 18);
-            this.gunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.gunaAdvenceButton2.LineLeft = 3;
-            this.gunaAdvenceButton2.Location = new System.Drawing.Point(0, 72);
-            this.gunaAdvenceButton2.Name = "gunaAdvenceButton2";
-            this.gunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(82)))), ((int)(((byte)(86)))));
-            this.gunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
-            this.gunaAdvenceButton2.OnHoverImage = null;
-            this.gunaAdvenceButton2.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaAdvenceButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.Size = new System.Drawing.Size(169, 42);
-            this.gunaAdvenceButton2.TabIndex = 2;
-            this.gunaAdvenceButton2.Text = "Gráfico Gastos";
-            this.gunaAdvenceButton2.TextOffsetX = 12;
-            this.gunaAdvenceButton2.Click += new System.EventHandler(this.gunaAdvenceButton2_Click);
-            // 
-            // gunaAdvenceButton1
-            // 
-            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.gunaAdvenceButton1.Checked = true;
-            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.CheckedImage")));
-            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
-            this.gunaAdvenceButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.Image")));
-            this.gunaAdvenceButton1.ImageOffsetX = 15;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(18, 18);
-            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.gunaAdvenceButton1.LineLeft = 3;
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(0, 30);
-            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(82)))), ((int)(((byte)(86)))));
-            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(167)))), ((int)(((byte)(168)))));
-            this.gunaAdvenceButton1.OnHoverImage = null;
-            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(169, 42);
-            this.gunaAdvenceButton1.TabIndex = 1;
-            this.gunaAdvenceButton1.Text = "Gráfico Gastos";
-            this.gunaAdvenceButton1.TextOffsetX = 12;
-            this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
-            // 
-            // Pn_Usuario
-            // 
-            this.Pn_Usuario.Controls.Add(this.guna2HtmlLabel3);
-            this.Pn_Usuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pn_Usuario.Location = new System.Drawing.Point(0, 6);
-            this.Pn_Usuario.Name = "Pn_Usuario";
-            this.Pn_Usuario.Size = new System.Drawing.Size(900, 499);
-            this.Pn_Usuario.TabIndex = 1;
-            this.Pn_Usuario.PaddingChanged += new System.EventHandler(this.Pn_Usuario_PaddingChanged);
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Black", 25F);
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(24, 12);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(114, 47);
-            this.guna2HtmlLabel3.TabIndex = 58;
-            this.guna2HtmlLabel3.Text = "TELA 3";
-            // 
             // radiop2g
             // 
             this.radiop2g.BorderRadius = 7;
@@ -1326,6 +1327,13 @@ namespace appf1
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.menuPainel.ResumeLayout(false);
             this.pnBody.ResumeLayout(false);
+            this.pn_Estatisticas.ResumeLayout(false);
+            this.grafico_panel.ResumeLayout(false);
+            this.grafico_panel.PerformLayout();
+            this.gunaPanel1.ResumeLayout(false);
+            this.gunaPanel1.PerformLayout();
+            this.Pn_Usuario.ResumeLayout(false);
+            this.Pn_Usuario.PerformLayout();
             this.pn_Calcular2.ResumeLayout(false);
             this.pn_Calcular2.PerformLayout();
             this.p2g.ResumeLayout(false);
@@ -1334,13 +1342,6 @@ namespace appf1
             this.p3g.PerformLayout();
             this.p1g.ResumeLayout(false);
             this.p1g.PerformLayout();
-            this.pn_Estatisticas.ResumeLayout(false);
-            this.grafico_panel.ResumeLayout(false);
-            this.grafico_panel.PerformLayout();
-            this.gunaPanel1.ResumeLayout(false);
-            this.gunaPanel1.PerformLayout();
-            this.Pn_Usuario.ResumeLayout(false);
-            this.Pn_Usuario.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

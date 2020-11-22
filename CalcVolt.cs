@@ -307,5 +307,10 @@ namespace appf1
         {
 
         }
+
+        private void painelPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
     }
 }

@@ -31,8 +31,8 @@ namespace appf1
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.LoginTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cIdBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cSenhaBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.LogarButton = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -62,61 +62,61 @@ namespace appf1
             this.label2.TabIndex = 1;
             this.label2.Text = "SENHA:";
             // 
-            // LoginTextBox
+            // cIdBox
             // 
-            this.LoginTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
-            this.LoginTextBox.BorderRadius = 5;
-            this.LoginTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LoginTextBox.DefaultText = "";
-            this.LoginTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.LoginTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.LoginTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.LoginTextBox.DisabledState.Parent = this.LoginTextBox;
-            this.LoginTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.LoginTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
-            this.LoginTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LoginTextBox.FocusedState.Parent = this.LoginTextBox;
-            this.LoginTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.LoginTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.LoginTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LoginTextBox.HoverState.Parent = this.LoginTextBox;
-            this.LoginTextBox.Location = new System.Drawing.Point(123, 192);
-            this.LoginTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.LoginTextBox.Name = "LoginTextBox";
-            this.LoginTextBox.PasswordChar = '\0';
-            this.LoginTextBox.PlaceholderText = "";
-            this.LoginTextBox.SelectedText = "";
-            this.LoginTextBox.ShadowDecoration.Parent = this.LoginTextBox;
-            this.LoginTextBox.Size = new System.Drawing.Size(248, 37);
-            this.LoginTextBox.TabIndex = 5;
+            this.cIdBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
+            this.cIdBox.BorderRadius = 5;
+            this.cIdBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cIdBox.DefaultText = "";
+            this.cIdBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.cIdBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.cIdBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cIdBox.DisabledState.Parent = this.cIdBox;
+            this.cIdBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cIdBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.cIdBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cIdBox.FocusedState.Parent = this.cIdBox;
+            this.cIdBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.cIdBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.cIdBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cIdBox.HoverState.Parent = this.cIdBox;
+            this.cIdBox.Location = new System.Drawing.Point(123, 192);
+            this.cIdBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cIdBox.Name = "cIdBox";
+            this.cIdBox.PasswordChar = '\0';
+            this.cIdBox.PlaceholderText = "";
+            this.cIdBox.SelectedText = "";
+            this.cIdBox.ShadowDecoration.Parent = this.cIdBox;
+            this.cIdBox.Size = new System.Drawing.Size(248, 37);
+            this.cIdBox.TabIndex = 5;
             // 
-            // guna2TextBox1
+            // cSenhaBox
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
-            this.guna2TextBox1.BorderRadius = 5;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(123, 280);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(248, 37);
-            this.guna2TextBox1.TabIndex = 6;
+            this.cSenhaBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
+            this.cSenhaBox.BorderRadius = 5;
+            this.cSenhaBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cSenhaBox.DefaultText = "";
+            this.cSenhaBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.cSenhaBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.cSenhaBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cSenhaBox.DisabledState.Parent = this.cSenhaBox;
+            this.cSenhaBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cSenhaBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.cSenhaBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cSenhaBox.FocusedState.Parent = this.cSenhaBox;
+            this.cSenhaBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.cSenhaBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.cSenhaBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cSenhaBox.HoverState.Parent = this.cSenhaBox;
+            this.cSenhaBox.Location = new System.Drawing.Point(123, 280);
+            this.cSenhaBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cSenhaBox.Name = "cSenhaBox";
+            this.cSenhaBox.PasswordChar = '\0';
+            this.cSenhaBox.PlaceholderText = "";
+            this.cSenhaBox.SelectedText = "";
+            this.cSenhaBox.ShadowDecoration.Parent = this.cSenhaBox;
+            this.cSenhaBox.Size = new System.Drawing.Size(248, 37);
+            this.cSenhaBox.TabIndex = 6;
             // 
             // label3
             // 
@@ -184,8 +184,8 @@ namespace appf1
             this.Controls.Add(this.LogarButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.LoginTextBox);
+            this.Controls.Add(this.cSenhaBox);
+            this.Controls.Add(this.cIdBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -201,8 +201,8 @@ namespace appf1
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox LoginTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox cIdBox;
+        private Guna.UI2.WinForms.Guna2TextBox cSenhaBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2GradientButton LogarButton;

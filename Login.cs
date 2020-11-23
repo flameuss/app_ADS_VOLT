@@ -70,7 +70,7 @@ namespace appf1
         {
             conexao.Open();
             cmd.Connection = conexao;
-
+            
             try
             {
                 cmd.CommandText = "SELECT * FROM login WHERE login= '" + LoginTextBox.Text + "' and senha = '" + SenhaTextBox.Text + "'"; //inserção dos valores dgitados para realização do login

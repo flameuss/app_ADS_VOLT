@@ -16,7 +16,8 @@ namespace appf1
     public partial class Form1 : Form
     {
         Thread nt;
-
+        private MySqlDataAdapter mAdapter;
+        private DataSet mDataSet;
         MySqlConnection conexao = new MySqlConnection("server = localhost; UID = root; pwd ='' ; database = app01; port = 3306; SslMode = none"); //Mudar o nome do DB
         MySqlCommand cmd = new MySqlCommand();
 
@@ -56,13 +57,13 @@ namespace appf1
         }
 
         private void LogarButton_Click(object sender, EventArgs e)
-        {
+        {/*
             conexao.Open();
             cmd.Connection = conexao;
 
             try
             {
-                cmd.CommandText = "SELECT * FROM login WHERE login= '" + LoginTextBox.Text + "' and senha = '" + SenhaTextBox.Text + "'"; //inserção dos valores dgitados para realização do login
+                cmd.CommandText = "ADD * FROM login WHERE login= '" + cIdBox.Text + "' and senha = '" + cSenhaBox.Text + "'"; //inserção dos valores dgitados para realização do login
 
                 MySqlDataReader ler = cmd.ExecuteReader();
 
@@ -83,8 +84,32 @@ namespace appf1
             {
                 MessageBox.Show("Ocorreu o seguinte erro: " + ex);
             }
+           // Início da Conexão com indicação de qual o servidor, nome de base de dados e utilizar
+ 
+	/* É aconselhável criar um utilizador com password. Para acrescentar a password é somente
+	necessário acrescentar o seguinte código a seguir ao uid=root;password=xxxxx*/
 
-            conexao.Close();
+            
+
+            // Abre a conexão
+            conexao.Open();
+
+            //Query SQL
+            cmd.CommandText = "SELECT * FROM login WHERE login= '" + cIdBox.Text + "' and senha = '" + cSenhaBox.Text + "'"; //inserção dos valores dgitados para realização do login
+
+
+            MySqlCommand command = new MySqlCommand("INSERT INTO tabela_dados (titulo,descricao)" +
+            "VALUES('" + cIdBox.Text + "','" + cSenhaBox.Text + "')", conexao);
+
+            //Executa a Query SQL
+            command.ExecuteNonQuery();
+
+            // Fecha a conexão
+           conexao.Close();
+
+            //Mensagem de Sucesso
+            MessageBox.Show("Gravado com Sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        
         }
     }
 }

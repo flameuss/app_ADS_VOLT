@@ -32,6 +32,7 @@ namespace appf1
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.LoginPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.VersaoText = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.CadastreseButton = new Guna.UI2.WinForms.Guna2Button();
             this.esqueceuSenhaText = new System.Windows.Forms.LinkLabel();
@@ -40,13 +41,15 @@ namespace appf1
             this.senhaText = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LoginTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.loginText = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LoginInfText02 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LoginInfText = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.OndasPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.arredondamentoCantos = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.LoginInfText02 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LoginPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OndasPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LoginPanel
@@ -66,9 +69,19 @@ namespace appf1
             this.LoginPanel.Controls.Add(this.LoginInfText02);
             this.LoginPanel.Controls.Add(this.LoginInfText);
             this.LoginPanel.Controls.Add(this.OndasPictureBox);
+            this.LoginPanel.Controls.Add(this.guna2PictureBox1);
             this.LoginPanel.Name = "LoginPanel";
             this.LoginPanel.ShadowDecoration.Parent = this.LoginPanel;
             this.LoginPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LoginPanel_Paint);
+            // 
+            // guna2ControlBox1
+            // 
+            resources.ApplyResources(this.guna2ControlBox1, "guna2ControlBox1");
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(74)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             // 
             // VersaoText
             // 
@@ -181,14 +194,6 @@ namespace appf1
             this.loginText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
             this.loginText.Name = "loginText";
             // 
-            // LoginInfText02
-            // 
-            this.LoginInfText02.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.LoginInfText02, "LoginInfText02");
-            this.LoginInfText02.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LoginInfText02.Name = "LoginInfText02";
-            this.LoginInfText02.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
-            // 
             // LoginInfText
             // 
             this.LoginInfText.BackColor = System.Drawing.Color.Transparent;
@@ -211,14 +216,23 @@ namespace appf1
             this.arredondamentoCantos.BorderRadius = 10;
             this.arredondamentoCantos.TargetControl = this;
             // 
-            // guna2ControlBox1
+            // guna2PictureBox1
             // 
-            resources.ApplyResources(this.guna2ControlBox1, "guna2ControlBox1");
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(74)))));
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click_1);
+            // 
+            // LoginInfText02
+            // 
+            this.LoginInfText02.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.LoginInfText02, "LoginInfText02");
+            this.LoginInfText02.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LoginInfText02.Name = "LoginInfText02";
+            this.LoginInfText02.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
             // Login
             // 
@@ -232,6 +246,7 @@ namespace appf1
             this.LoginPanel.ResumeLayout(false);
             this.LoginPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OndasPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,7 +256,6 @@ namespace appf1
 
         private Guna.UI2.WinForms.Guna2Panel LoginPanel;
         private Guna.UI2.WinForms.Guna2PictureBox OndasPictureBox;
-        private Guna.UI2.WinForms.Guna2HtmlLabel LoginInfText02;
         private Guna.UI2.WinForms.Guna2HtmlLabel LoginInfText;
         private Guna.UI2.WinForms.Guna2GradientButton LogarButton;
         private Guna.UI2.WinForms.Guna2TextBox SenhaTextBox;
@@ -253,6 +267,9 @@ namespace appf1
         private Guna.UI2.WinForms.Guna2Elipse arredondamentoCantos;
         private Guna.UI2.WinForms.Guna2HtmlLabel VersaoText;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LoginInfText02;
     }
 }
 

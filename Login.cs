@@ -113,6 +113,11 @@ namespace appf1
         {
             this.Close();
         }
+
+        private void guna2PictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
         

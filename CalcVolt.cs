@@ -312,5 +312,10 @@ namespace appf1
         {
            
         }
+
+        private void estatisticasButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

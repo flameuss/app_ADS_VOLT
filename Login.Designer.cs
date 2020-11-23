@@ -100,12 +100,10 @@ namespace appf1
             resources.ApplyResources(this.CadastreseButton, "CadastreseButton");
             this.CadastreseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
             this.CadastreseButton.HoverState.Parent = this.CadastreseButton;
-            this.CadastreseButton.Image = ((System.Drawing.Image)(resources.GetObject("CadastreseButton.Image")));
             this.CadastreseButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.CadastreseButton.ImageSize = new System.Drawing.Size(25, 20);
             this.CadastreseButton.Name = "CadastreseButton";
             this.CadastreseButton.ShadowDecoration.Parent = this.CadastreseButton;
-            this.CadastreseButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.CadastreseButton.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // esqueceuSenhaText
@@ -116,6 +114,7 @@ namespace appf1
             this.esqueceuSenhaText.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(101)))), ((int)(((byte)(134)))));
             this.esqueceuSenhaText.Name = "esqueceuSenhaText";
             this.esqueceuSenhaText.TabStop = true;
+            this.esqueceuSenhaText.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.esqueceuSenhaText_LinkClicked);
             // 
             // LogarButton
             // 

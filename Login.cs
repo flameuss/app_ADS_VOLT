@@ -118,6 +118,11 @@ namespace appf1
         {
 
         }
+
+        private void esqueceuSenhaText_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
         

@@ -41,12 +41,12 @@ namespace appf1
             this.senhaText = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LoginTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.loginText = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LoginInfText02 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LoginInfText = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.OndasPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.arredondamentoCantos = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.LoginInfText02 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LoginPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OndasPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -193,6 +193,14 @@ namespace appf1
             this.loginText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
             this.loginText.Name = "loginText";
             // 
+            // LoginInfText02
+            // 
+            this.LoginInfText02.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.LoginInfText02, "LoginInfText02");
+            this.LoginInfText02.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LoginInfText02.Name = "LoginInfText02";
+            this.LoginInfText02.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
+            // 
             // LoginInfText
             // 
             this.LoginInfText.BackColor = System.Drawing.Color.Transparent;
@@ -210,11 +218,6 @@ namespace appf1
             this.OndasPictureBox.UseTransparentBackground = true;
             this.OndasPictureBox.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
-            // arredondamentoCantos
-            // 
-            this.arredondamentoCantos.BorderRadius = 10;
-            this.arredondamentoCantos.TargetControl = this;
-            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -225,13 +228,10 @@ namespace appf1
             this.guna2PictureBox1.UseTransparentBackground = true;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click_1);
             // 
-            // LoginInfText02
+            // arredondamentoCantos
             // 
-            this.LoginInfText02.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.LoginInfText02, "LoginInfText02");
-            this.LoginInfText02.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LoginInfText02.Name = "LoginInfText02";
-            this.LoginInfText02.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
+            this.arredondamentoCantos.BorderRadius = 10;
+            this.arredondamentoCantos.TargetControl = this;
             // 
             // Login
             // 

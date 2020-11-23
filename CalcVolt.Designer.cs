@@ -102,6 +102,7 @@ namespace appf1
             this.guna2HtmlLabel27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.radiop2g = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.radiop3g = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
             this.painelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.menuPainel.SuspendLayout();
@@ -1303,6 +1304,12 @@ namespace appf1
             // 
             this.radiop3g.BorderRadius = 7;
             // 
+            // mySqlCommandBuilder1
+            // 
+            this.mySqlCommandBuilder1.DataAdapter = null;
+            this.mySqlCommandBuilder1.QuotePrefix = "`";
+            this.mySqlCommandBuilder1.QuoteSuffix = "`";
+            // 
             // CalcVolt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1419,5 +1426,6 @@ namespace appf1
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel29;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel30;
+        private MySqlConnector.MySqlCommandBuilder mySqlCommandBuilder1;
     }
 }

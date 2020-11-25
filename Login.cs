@@ -58,7 +58,9 @@ namespace appf1
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-
+          
+            Form cadastro = new Form1();
+            cadastro.Show();
         }
 
         private void LoginPanel_Paint(object sender, PaintEventArgs e)

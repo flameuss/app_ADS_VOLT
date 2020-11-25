@@ -29,6 +29,7 @@ namespace appf1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cIdBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -37,6 +38,7 @@ namespace appf1
             this.label4 = new System.Windows.Forms.Label();
             this.LogarButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -162,6 +164,7 @@ namespace appf1
             // 
             // guna2ControlBox1
             // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(74)))));
             this.guna2ControlBox1.BorderColor = System.Drawing.Color.BlanchedAlmond;
             this.guna2ControlBox1.CustomIconSize = 12F;
@@ -173,6 +176,11 @@ namespace appf1
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 45);
             this.guna2ControlBox1.TabIndex = 10;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.ContainerControl = this;
+            this.guna2DragControl1.TargetControl = this;
             // 
             // Form1
             // 
@@ -207,5 +215,6 @@ namespace appf1
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2GradientButton LogarButton;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

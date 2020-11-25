@@ -95,10 +95,8 @@ namespace appf1
             conexao.Open();
 
             //Query SQL
-            cmd.CommandText = "SELECT * FROM login WHERE login= '" + cIdBox.Text + "' and senha = '" + cSenhaBox.Text + "'"; //inserção dos valores dgitados para realização do login
-
-
-            MySqlCommand command = new MySqlCommand("INSERT INTO tabela_dados (titulo,descricao)" +
+            
+            MySqlCommand command = new MySqlCommand("INSERT INTO login (login ,senha)" +
             "VALUES('" + cIdBox.Text + "','" + cSenhaBox.Text + "')", conexao);
 
             //Executa a Query SQL
@@ -108,7 +106,7 @@ namespace appf1
            conexao.Close();
 
             //Mensagem de Sucesso
-            MessageBox.Show("Gravado com Sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Cadastro Realizado com Sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
         
         }
     }

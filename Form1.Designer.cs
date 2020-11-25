@@ -113,7 +113,7 @@ namespace appf1
             this.cSenhaBox.Location = new System.Drawing.Point(123, 280);
             this.cSenhaBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cSenhaBox.Name = "cSenhaBox";
-            this.cSenhaBox.PasswordChar = '\0';
+            this.cSenhaBox.PasswordChar = '*';
             this.cSenhaBox.PlaceholderText = "";
             this.cSenhaBox.SelectedText = "";
             this.cSenhaBox.ShadowDecoration.Parent = this.cSenhaBox;

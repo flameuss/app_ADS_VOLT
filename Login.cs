@@ -58,8 +58,8 @@ namespace appf1
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-          
-            Form cadastro = new Form1();
+
+            Form1 cadastro = new Form1();
             cadastro.Show();
         }
 
